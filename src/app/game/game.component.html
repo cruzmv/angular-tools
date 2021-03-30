@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="score">
+        <label class="level_label">Level: {{ level }}</label>
+        <label class="score_label">score: {{ score }}</label>
+        <label class="score_label">Last Score: {{ lastScore }}</label>
+    </div>
+    <div class="circle">
+        <div class="row line">
+            <div class="col-6">
+                <div [@block_click]="yellowClick ? 'click_start' : 'click_end'" 
+                     class="block color1"
+                     (click)="yellow_click(true)">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div [@block_click]="redClick ? 'click_start' : 'click_end'" 
+                     class="block color2"
+                     (click)="red_click(true)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row line">
+            <div class="col-6">
+                <div [@block_click]="greenClick ? 'click_start' : 'click_end'" 
+                     class="block color3"
+                     (click)="green_click(true)">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div [@block_click]="blueClick ? 'click_start' : 'click_end'" 
+                     class="block color4"
+                     (click)="blue_click(true)">
+
+                </div>
+            </div>
+        </div>
+        <div class="midle_circle" 
+             (click)="startGame($event.target)">
+            Start
+        </div>
+    </div>
+
+</div>

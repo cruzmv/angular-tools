@@ -1,0 +1,18 @@
+<div *ngIf="auth.isLoggedIn()">
+    <h1>Hello {{ auth.userData.displayName }}!</h1>
+    <button (click)="auth.logout()">Logout</button>
+</div>
+<div *ngIf="!auth.isLoggedIn()" class="login_block">
+    <button mat-raised-button color="primary" (click)="auth.login()">Login with Google</button>
+</div>
+
+<!--
+<div *ngIf="auth.userData | async as user; else showLogin">
+    <h1>Hello {{ auth.userData.displayName }}!</h1>
+    <button (click)="auth.logout()">Logout</button>
+</div>
+<ng-template #showLogin>
+    <p>Please login.</p>
+    <button (click)="auth.login()">Login with Google</button>
+</ng-template>
+-->

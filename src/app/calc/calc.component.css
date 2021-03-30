@@ -1,0 +1,19 @@
+mat-card{
+    margin: 20px;
+}
+.display{
+    height: 120px;
+    width: 100%;
+    background-color: #F3EDED;
+    position: relative;
+}
+
+.display_calc{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;    
+}
+
+.btn{
+    cursor: pointer;
+}

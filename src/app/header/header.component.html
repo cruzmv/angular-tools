@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <button mat-icon-button 
+            [matMenuTriggerFor]="menu"
+            class="example-icon" 
+            aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">Angular Tools Lab</span>
+    <span class="example-spacer"></span>
+    <!--<button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>-->
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">Home</button>
+    <button mat-menu-item routerLink="/calc">Calculator</button>
+    <button mat-menu-item routerLink="/todo">ToDo</button>
+    <button mat-menu-item routerLink="/google">Google</button>
+    <button mat-menu-item routerLink="/game">Game</button>
+  </mat-menu>

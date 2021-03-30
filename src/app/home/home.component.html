@@ -1,0 +1,76 @@
+<share-buttons [theme]="'material-dark'"
+    [include]="['facebook','twitter','linkedin','pinterest','reddit','mix','vk','telegram','messenger','whatsapp','xing','line','sms','email','copy']"
+    [show]="9" [size]="1" [url]="'https://www.eduforbetterment.com/generate-qr-code-in-angular/'"
+    [image]="'https://www.eduforbetterment.com/wp-content/uploads/2020/08/qrcode.jpg'" [autoSetMeta]="false">
+</share-buttons>
+
+<mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>calculate</mat-icon>
+                </div>
+                <mat-card-title>Calculator</mat-card-title>
+                <mat-card-subtitle>Simple calculator</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <a routerLink="/calc">
+                    <img mat-card-image src="assets/img/calculator.svg" alt="Calculator">
+                </a>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>task_alt</mat-icon>
+                </div>
+                <mat-card-title>ToDo</mat-card-title>
+                <mat-card-subtitle>To Do List</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <a routerLink="/todo">
+                    <img mat-card-image src="assets/img/to-do-list.svg" alt="Todo list">
+                </a>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>g_translate</mat-icon>
+                </div>
+                <mat-card-title>Google</mat-card-title>
+                <mat-card-subtitle>Firebase Tests</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <a routerLink="/google">
+                    <img mat-card-image src="assets/img/google.svg" alt="Google tests">
+                </a>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <mat-icon>videogame_asset</mat-icon>
+                </div>
+                <mat-card-title>Game</mat-card-title>
+                <mat-card-subtitle>Color Game</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <a routerLink="/game">
+                    <img mat-card-image src="assets/img/gamepad.svg" alt="Game">
+                </a>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "petgree-a90b0": {
+      "hosting": {
+        "tools": [
+          "petgree-a90b0"
+        ]
+      }
+    }
+  }
+}

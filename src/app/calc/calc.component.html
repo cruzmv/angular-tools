@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-content>
+        <div class="display">
+            <div class="display_calc" [innerHTML] = "display">
+
+            </div>
+        </div>
+        <hr>
+        <mat-grid-list cols="4" rowHeight="60px">
+            <mat-grid-tile *ngFor="let tile of tiles" 
+                [colspan]="tile.cols" 
+                [rowspan]="tile.rows"
+                [style.background]="tile.color"
+                (click)="btnClick(tile.text)"
+                class="btn">
+                {{tile.text}}
+            </mat-grid-tile>
+        </mat-grid-list>
+
+    </mat-card-content>
+</mat-card>
+

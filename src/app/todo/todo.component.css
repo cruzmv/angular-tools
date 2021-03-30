@@ -1,0 +1,17 @@
+table {
+    width: 90%;
+    margin: 20px;
+}
+
+.status_header{
+    width: 1px;
+}
+
+.status_check{
+    padding-left: 20px;
+    padding-top: 13px;
+}
+
+.add {
+    float: right;
+}

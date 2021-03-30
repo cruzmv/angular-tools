@@ -1,0 +1,28 @@
+<div *ngIf="!auth.isLoggedIn()">
+    <app-login></app-login>
+</div>
+<div *ngIf="auth.isLoggedIn()">
+    <button mat-raised-button color="primary" class="logout_btn" (click)="auth.logout()">Logout</button>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-3">
+                <img src="{{(auth.userData.photoURL || auth.userData.photoURL == undefined) ? auth.userData.photoURL : '/assets/dummy-user.png'}}" alt="{{auth.userData.displayName}}">
+            </div>            
+            <div class="col-9">
+                Hello {{auth.userData.displayName}}
+                <br>
+                {{auth.userData.email}}
+            </div>            
+        </div>
+    </div>
+    <hr>
+    
+    Registered Users:
+    <ul>
+        <li class="text" *ngFor="let item of items | async">
+            {{item.email}}
+        </li>
+    </ul>    
+    
+</div>
+
