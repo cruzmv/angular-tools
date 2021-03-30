@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~ngx-sharebuttons/themes/material/material-dark-theme';
-@import '~ngx-sharebuttons/themes/modern/modern-light-theme';
-@import '~ngx-sharebuttons/themes/circles/circles-dark-theme';
+/*
+@import '../node_modules/ngx-sharebuttons/themes/modern/modern-light-theme.scss';
+@import '../node_modules/ngx-sharebuttons/themes/circles/circles-dark-theme.scss'; 
+*/
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

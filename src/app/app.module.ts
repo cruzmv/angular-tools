@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatListModule } from '@angular/material/list';
 
 //Ngx Share
 import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
@@ -29,6 +31,7 @@ import { CalcComponent } from './calc/calc.component';
 import { TodoComponent } from './todo/todo.component';
 import { DialogTodo } from './todo/todo.component';
 import { GoogleComponent } from './google/google.component';
+import { BottomSheetOverviewExampleSheet } from './header/header.component';
 
 // Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -50,7 +53,8 @@ import { GameComponent } from './game/game.component';
     DialogTodo,
     GoogleComponent,
     LoginComponent,
-    GameComponent
+    GameComponent,
+    BottomSheetOverviewExampleSheet
   ],
   imports: [
     BrowserModule,
@@ -69,6 +73,8 @@ import { GameComponent } from './game/game.component';
     MatFormFieldModule,
     MatInputModule,
     MatMenuModule,
+    MatBottomSheetModule,
+    MatListModule,
     // Ngx share
     ShareButtonsModule.withConfig({
       debug: true
